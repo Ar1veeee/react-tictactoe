@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #192A32;
+  color: #A8BEC9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-wrapper {
+  margin: 15px;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-inline-start: 5px;
+}
+
+.square {
+  inline-size: 120px; /*width*/
+  border: none;
+  border-radius: 10px;
+  font-weight:400;
+  background-color: white;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.score-wrapper {
+  inline-size: 120px; /*width*/
+  block-size: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  font-weight:600;    
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.score {    
+  color: black;     
+  text-align: center;
+}
+
+.redo-button {
+  inline-size: 200px;
+  block-size: 35px;
+  margin-block-start: 10px;
+  border-radius: 7px;
+  background-color: #30C4BE;
+  border: 1px solid black;
+  
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  inline-size: 450px;
+  block-size: 450px;
+}
+
+.status-upper {
+  margin-block-end: 10px; /*margin-bottom*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-bottom {
+  margin-block-start: 50px;
+  display: flex;
+}
+
+.card {
+  block-size: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 100px;
+  margin-inline-start: 200px;
+}
