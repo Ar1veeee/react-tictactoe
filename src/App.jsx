@@ -124,9 +124,7 @@ function Board({ xIsNext, squares, onPlay, onReset, scores }) {
             key={index}
             value={square}
             onSquareClick={() => handleClick(index)}
-            backgroundColor="#1F3540"
-            height="120px"
-            fontSize="4rem"
+            backgroundColor="#1F3540"                        
             isBold={true}
             boxShadow="0px 6px black"
           />

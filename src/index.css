@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -23,32 +24,38 @@ body {
 
 .logo {
   margin-inline-start: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .square {
-  inline-size: 120px; /*width*/
+  inline-size: 120px;
+  /*width*/
+  block-size: 120px;
   border: none;
   border-radius: 10px;
-  font-weight:400;
+  font-weight: 400;
   background-color: white;
   cursor: pointer;
   margin: 15px;
+  font-size: 3rem;
 }
 
 .score-wrapper {
-  inline-size: 120px; /*width*/
+  inline-size: 120px;
+  /*width*/
   block-size: 70px;
   border: 2px solid black;
   border-radius: 10px;
   color: black;
-  font-weight:600;    
+  font-weight: 600;
   margin: 15px;
   display: flex;
   flex-direction: column;
 }
 
-.score {    
-  color: black;     
+.score {
+  color: black;
   text-align: center;
 }
 
@@ -59,18 +66,18 @@ body {
   border-radius: 7px;
   background-color: #30C4BE;
   border: 1px solid black;
-  
+
 }
 
 .board {
   display: flex;
   flex-wrap: wrap;
-  inline-size: 450px;
+  max-inline-size: 450px;
   block-size: 450px;
 }
 
 .status-upper {
-  margin-block-end: 10px; /*margin-bottom*/
+  margin-block-end: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -80,17 +87,61 @@ body {
   display: flex;
 }
 
-.card {
-  block-size: 100px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 15px;
-}
-
 .game {
   display: flex;
   justify-content: center;
   margin-block-start: 100px;
   margin-inline-start: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .logo-wrapper {
+    font-size: 20px;
+    margin: 15px;
+  }
+
+  .square {
+    inline-size: 85px;
+    block-size: 85px;
+    font-size: 2rem;
+  }
+
+  .board {
+    block-size: 350px;
+  }
+
+  .game-board {
+    inline-size: 400px;
+  }
+
+  .game {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  .board {
+    max-block-size: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 10px;
+    margin: 0px 1px 0px 4px;
+  }
+
+  .score-wrapper {
+    inline-size: 80px;
+    block-size: 70px;
+    font-size: 14px;
+  }
+
+  .redo-button {
+    inline-size: 160px;
+    block-size: 35px;
+    font-size: 14px;    
+  }
+
+  .status-bottom {
+    display: flex;
+    justify-content: space-evenly;
+  }  
 }
