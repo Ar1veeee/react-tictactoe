@@ -39,6 +39,21 @@ body {
   cursor: pointer;
   margin: 15px;
   font-size: 3rem;
+  
+}
+
+.upper-square {
+  inline-size: 120px;
+  /*width*/
+  block-size: 120px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: white;
+  cursor: pointer;
+  margin: 15px;
+  font-size: 15px;
+  
 }
 
 .score-wrapper {
@@ -80,6 +95,7 @@ body {
   margin-block-end: 10px;
   display: flex;
   justify-content: space-between;
+  font-size: 1rem;
 }
 
 .status-bottom {

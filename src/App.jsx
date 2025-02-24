@@ -33,16 +33,15 @@ function Logo({ fontColor, icon, fontWeight }) {
   </div>
 }
 
-function Status({ value, onSquareClick, backgroundColor, height, inlineSize, fontSize, isBold, fontColor, boxShadow, icon, display }) {
+function Status({ value, onSquareClick, backgroundColor, height, inlineSize, isBold, fontColor, boxShadow, icon, display }) {
   return (
     <button
-      className="square"
+      className="upper-square"
       onClick={onSquareClick}
       style={{
         backgroundColor: backgroundColor,
         blockSize: height,
-        inlineSize: inlineSize,
-        fontSize: fontSize,
+        inlineSize: inlineSize,  
         fontWeight: isBold ? "bold" : "500",
         color: fontColor,
         boxShadow: boxShadow,
@@ -114,7 +113,7 @@ function Board({ xIsNext, squares, onPlay, onReset, scores }) {
           <Logo icon={faO} fontColor='#F2B238' />
         </div>
         <Status value={status}
-          backgroundColor="#1F3540" height="40px" fontSize="1rem" isBold={true} fontColor="#A8BEC9" boxShadow="0px 3px black" />
+          backgroundColor="#1F3540" height="40px" isBold={true} fontColor="#A8BEC9" boxShadow="0px 3px black" />
         <Status icon={faRepeat} onSquareClick={onReset}
           backgroundColor="#A8BEC9" height="40px" inlineSize="40px" fontSize="1rem" isBold={true} fontColor="#1F3540" boxShadow="0px 3px black" />
       </div>
