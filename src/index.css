@@ -13,6 +13,7 @@ body {
   background-color: #192A32;
   color: #A8BEC9;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .logo-wrapper {
@@ -134,7 +135,9 @@ body {
   .game {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 
   .board {
