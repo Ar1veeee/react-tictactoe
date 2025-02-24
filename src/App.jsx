@@ -190,11 +190,11 @@ export default function Game() {
     if (move > 0) {
       description = 'Go to move #' + move;
     } else {
-      description = 'Click on board to game start';
+      description = 'Click on board to start';
     }
     return (
-      <li key={move}>
-        <button className='redo-button' onClick={() => jumpTo(move)}>{description}</button>
+      <li key={move} className='mb-2 text-black'>
+        <button className='redo-button p-2' onClick={() => jumpTo(move)}>{description}</button>
       </li>
     );
   });
