@@ -72,7 +72,7 @@ body {
 .board {
   display: flex;
   flex-wrap: wrap;
-  max-inline-size: 450px;
+  inline-size: 450px;
   block-size: 450px;
 }
 
@@ -102,8 +102,8 @@ body {
   }
 
   .square {
-    inline-size: 85px;
-    block-size: 85px;
+    inline-size: 80px;
+    block-size: 80px;
     font-size: 2rem;
   }
 
@@ -122,10 +122,11 @@ body {
   }
 
   .board {
+    inline-size: 330px;
     max-block-size: 300px;
     grid-template-columns: repeat(3, 1fr);
     font-size: 10px;
-    margin: 0px 1px 0px 4px;
+    margin: auto;
   }
 
   .score-wrapper {
