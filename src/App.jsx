@@ -193,7 +193,7 @@ export default function Game() {
       description = 'Click on board to start';
     }
     return (
-      <li key={move} className='mb-2 text-black'>
+      <li key={move} className='mt-3 text-black'>
         <button className='redo-button p-2' onClick={() => jumpTo(move)}>{description}</button>
       </li>
     );
